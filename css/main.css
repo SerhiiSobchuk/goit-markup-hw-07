@@ -116,6 +116,58 @@ img {
   color: var(--accent-text-color);
 }
 
+.header-logo {
+  display: inline-block;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #2196F3;
+  text-decoration: none;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  padding-right: 93px;
+  transform: rotateY(0) scale(1);
+  transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover {
+  color: black;
+  transform: rotateY(45deg) scale(1.25);
+  transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover .logo-studio-header {
+  color: var(--accent-text-color);
+  transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logo-studio-header {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #2196F3;
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+
+.logo-studio-footer {
+  color: var(--white);
+}
+
 .page1-button {
   display: inline-block;
   min-width: 200px;
@@ -390,6 +442,186 @@ img {
   margin-top: 0;
 }
 
+.hero-backdrop-form {
+  content: "";
+  width: 100%;
+  height: 100%;
+  padding: 40px 40px;
+}
+
+.form-title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black);
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.form-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.form-field {
+  display: block;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 4px;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: Regular;
+  line-height: 14px;
+  letter-spacing: 1%;
+  padding: 0;
+  width: auto;
+}
+
+.form-input {
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding-left: 35px;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-position {
+  content: "";
+  position: relative;
+}
+
+.form-icon {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 15px;
+  top: 14px;
+  fill: black;
+}
+
+.form-comment {
+  width: 448px;
+  height: 120px;
+  border: 0;
+}
+
+.form-comment-text {
+  resize: none;
+  width: inherit;
+  height: inherit;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 12px;
+  padding-top: 12px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-field:nth-child(3) {
+  margin-bottom: 20px;
+}
+
+.agreement {
+  width: 448px;
+  height: 24px;
+  margin-bottom: 30px;
+}
+
+.agreement-check {
+  width: 16px;
+  height: 15px;
+  border: 1px solid black;
+  margin-right: 8px;
+}
+
+.agreement-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13.9px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+.agreement-link {
+  color: #4185bd;
+}
+
+.agree-location {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-left: 12px;
+  margin-right: 12px;
+  width: auto;
+  height: 24px;
+}
+
+.btn-submit {
+  display: inline-block;
+  background-color: var(--accent-text-color);
+  padding-left: 56px;
+  padding-right: 56px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 124px;
+  font-family: Roboto;
+  font-style: Bold;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 6%;
+  color: white;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-submit:hover {
+  background-color: #47657c;
+  color: var(--accent-text-color);
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-list-item:hover .form-input,
+.form-list-item:focus-within .form-input {
+  border: 1px solid var(--accent-text-color);
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-list-item:hover .form-icon,
+.form-list-item:focus-within .form-icon {
+  fill: var(--accent-text-color);
+}
+
+.form-list-item:hover .form-comment-text,
+.form-list-item:focus-within .form-comment-text {
+  border: 1px solid var(--accent-text-color);
+  cursor: pointer;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .header-all {
   left: 0;
   right: 0;
@@ -470,42 +702,6 @@ img {
 }
 
 /* Web + Studio */
-.header-logo {
-  display: inline-block;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #2196F3;
-  text-decoration: none;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  padding-right: 93px;
-  transform: rotateY(0) scale(1);
-  transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-logo:hover {
-  color: black;
-  transform: rotateY(45deg) scale(1.25);
-  transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-logo:hover .logo-studio-header {
-  color: var(--accent-text-color);
-  transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.logo-studio-header {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #212121;
-}
-
 .contacts-header {
   padding-left: 286px;
 }
@@ -519,22 +715,6 @@ img {
   background: #2F303A;
   padding-top: 60px;
   padding-bottom: 60px;
-}
-
-.footer-logo {
-  display: inline-block;
-  margin-bottom: 20px;
-  color: #2196F3;
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  font-style: normal;
-  letter-spacing: 0.03em;
-  text-decoration: none;
-}
-
-.logo-studio-footer {
-  color: var(--white);
 }
 
 .address-footer-main {
@@ -613,6 +793,47 @@ img {
   letter-spacing: 0.04em;
   color: var(--white);
   margin-bottom: 20px;
+}
+
+.mailing {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white);
+  padding: 0;
+  margin-bottom: 20px;
+  margin-top: 14px;
+  margin-left: 55px;
+}
+
+.subs-input {
+  width: 358px;
+  height: 50px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
+  background-color: #2F303A;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-left: 55px;
+}
+
+.subs-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white);
 }
 
 .p1h2-hidden {
@@ -811,6 +1032,15 @@ img {
   color: #212121;
 }
 
+.page1-h3-p {
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin: 0;
+}
+
 .customers {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -917,24 +1147,6 @@ img {
   cursor: pointer;
 }
 
-/* постоянные клиенты */
-/* 1 страница, описание p для h3 */
-.page1-h3-p {
-  font-family: Roboto;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-  margin: 0;
-}
-
-/* footer страниц */
-/* 2 страница */
-.all-port {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
 .hidden {
   position: absolute !important;
   clip: rect(1px 1px 1px 1px);
@@ -944,6 +1156,11 @@ img {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.all-port {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .port-ul-buttons {
@@ -956,6 +1173,10 @@ img {
   margin-right: 8px;
 }
 
+/* постоянные клиенты */
+/* 1 страница, описание p для h3 */
+/* footer страниц */
+/* 2 страница */
 .offers {
   display: flex;
   flex-wrap: wrap;
@@ -1047,225 +1268,5 @@ img {
 }
 
 /* модальное окно */
-/*форма модкалки героя */
-.hero-backdrop-form {
-  content: "";
-  width: 100%;
-  height: 100%;
-  padding: 40px 40px;
-}
-
-.form-title {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 20px;
-  line-height: 1.15;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--black);
-  padding: 0;
-  margin-bottom: 0;
-}
-
-.form-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-.form-field {
-  display: block;
-}
-
-.form-label {
-  display: block;
-  margin-bottom: 4px;
-  font-family: Roboto;
-  font-size: 12px;
-  font-style: Regular;
-  line-height: 14px;
-  letter-spacing: 1%;
-  padding: 0;
-  width: auto;
-}
-
-.form-input {
-  width: 448px;
-  height: 40px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  margin-bottom: 10px;
-  padding-left: 35px;
-  outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-position {
-  content: "";
-  position: relative;
-}
-
-.form-icon {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  left: 15px;
-  top: 14px;
-  fill: black;
-}
-
-.form-comment {
-  width: 448px;
-  height: 120px;
-  border: 0;
-}
-
-.form-comment-text {
-  resize: none;
-  width: inherit;
-  height: inherit;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-bottom: 12px;
-  padding-top: 12px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-field:nth-child(3) {
-  margin-bottom: 20px;
-}
-
-.agreement {
-  width: 448px;
-  height: 24px;
-  margin-bottom: 30px;
-}
-
-.agreement-check {
-  width: 16px;
-  height: 15px;
-  border: 1px solid black;
-  margin-right: 8px;
-}
-
-.agreement-text {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 13.9px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  color: #757575;
-}
-
-.agreement-link {
-  color: #4185bd;
-}
-
-.agree-location {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  margin-left: 12px;
-  margin-right: 12px;
-  width: auto;
-  height: 24px;
-}
-
-.btn-submit {
-  display: inline-block;
-  background-color: var(--accent-text-color);
-  padding-left: 56px;
-  padding-right: 56px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-left: 124px;
-  font-family: Roboto;
-  font-style: Bold;
-  font-size: 16px;
-  line-height: 1.6;
-  letter-spacing: 6%;
-  color: white;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-submit:hover {
-  background-color: #47657c;
-  color: var(--accent-text-color);
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-list-item:hover .form-input,
-.form-list-item:focus-within .form-input {
-  border: 1px solid var(--accent-text-color);
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form-list-item:hover .form-icon,
-.form-list-item:focus-within .form-icon {
-  fill: var(--accent-text-color);
-}
-
-.form-list-item:hover .form-comment-text,
-.form-list-item:focus-within .form-comment-text {
-  border: 1px solid var(--accent-text-color);
-  cursor: pointer;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mailing {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--white);
-  padding: 0;
-  margin-bottom: 20px;
-  margin-top: 14px;
-  margin-left: 55px;
-}
-
-.subs-input {
-  width: 358px;
-  height: 50px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.25;
-  align-items: center;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
-  padding-left: 16px;
-  background-color: #2F303A;
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-sizing: border-box;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  border-radius: 4px;
-  margin-left: 55px;
-}
-
-.subs-icon {
-  width: 24px;
-  height: 24px;
-  fill: var(--white);
-}
+/*форма модалки героя */
 /*# sourceMappingURL=main.css.map */

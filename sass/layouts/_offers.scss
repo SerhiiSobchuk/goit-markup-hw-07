@@ -1,0 +1,67 @@
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-between;
+    margin-bottom: 0;
+    padding: 0;
+    
+}
+
+.li-offers {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    width: calc((100% - 60px) / 3);
+    margin-bottom: 30px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+}
+
+.li-offers:hover,
+.current::after {
+    content: "";
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.offers-fokus {
+    position: relative;
+    overflow: hidden;
+}
+
+.offers-text {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--white);
+    padding: 63px 24px;
+    background-color: var(--accent-text-color);
+    transform: translateY(101%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.offers-fokus:hover .offers-text {    
+    transform: translateY(0);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.offers-a {
+    text-decoration: none;
+}
+
+
+
+.add-offers {
+    padding: 20px 24px;
+}

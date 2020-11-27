@@ -1,0 +1,48 @@
+.hidden {
+    position: absolute !important;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 0 !important;
+    border: 0 !important;
+    height: 1px !important;
+    width: 1px !important;
+    overflow: hidden;
+}
+
+.all-port {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+.port-ul-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.port-ul-buttons .port-li-buttons:not(:last-child) {
+    margin-right: 8px;
+}
+
+.h3-all-2 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: #212121;
+    margin-bottom: 4px;
+}
+
+.page2-p-h3 {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin-bottom: 0;
+    margin-top: 0;
+}
