@@ -116,6 +116,84 @@ img {
   color: var(--accent-text-color);
 }
 
+.page1-button {
+  display: inline-block;
+  min-width: 200px;
+  height: 50px;
+  padding: 10px 32px;
+  color: var(--white);
+  background-color: #2196f3;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page1-button:hover {
+  background-color: #757575;
+  color: var(--accent-text-color);
+  cursor: pointer;
+}
+
+.subs-btn {
+  display: inline-flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  background: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  padding: 13px 29px;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  outline: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subs-btn:hover,
+.subs-btn:focus {
+  background-color: var(--main-text-color);
+  color: var(--accent-text-color);
+  cursor: pointer;
+}
+
+.subs-btn:hover,
+.subs-btn:focus-within .subs-icon {
+  fill: var(--accent-text-color);
+}
+
+.page2-buttons {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #F5F4FA;
+  border-radius: 4px;
+  border: 0;
+  padding: 6px 22px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.page2-buttons:hover,
+.page2-buttons:focus {
+  background-color: var(--accent-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(119, 17, 17, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  color: var(--white);
+}
+
 /* для header */
 .header-all {
   left: 0;
@@ -281,29 +359,6 @@ img {
   text-align: center;
   width: 696px;
   margin-top: 0;
-}
-
-.page1-button {
-  display: inline-block;
-  min-width: 200px;
-  height: 50px;
-  padding: 10px 32px;
-  color: var(--white);
-  background-color: #2196f3;
-  text-decoration: none;
-  border-radius: 4px;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page1-button:hover {
-  background-color: #757575;
-  color: var(--accent-text-color);
-  cursor: pointer;
 }
 
 /* перечень решений */
@@ -903,31 +958,6 @@ img {
 }
 
 /* 2 страница кнопки */
-.page2-buttons {
-  font-family: Roboto;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  letter-spacing: 0.03em;
-  color: #212121;
-  background-color: #F5F4FA;
-  border-radius: 4px;
-  border: 0;
-  padding: 6px 22px;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.page2-buttons:hover,
-.page2-buttons:focus {
-  background-color: var(--accent-text-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(119, 17, 17, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-  cursor: pointer;
-}
-
-.page2-buttons:hover {
-  color: var(--white);
-}
-
 /* p на 2 странице */
 .page2-p-h3 {
   font-family: Roboto;
@@ -1236,38 +1266,5 @@ img {
   width: 24px;
   height: 24px;
   fill: var(--white);
-}
-
-.subs-btn {
-  display: inline-flex;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  width: 200px;
-  height: 50px;
-  background: var(--accent-text-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  margin-left: 12px;
-  padding: 13px 29px;
-  color: var(--white);
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  outline: none;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.subs-btn:hover,
-.subs-btn:focus {
-  background-color: var(--main-text-color);
-  color: var(--accent-text-color);
-  cursor: pointer;
-}
-
-.subs-btn:hover,
-.subs-btn:focus-within .subs-icon {
-  fill: var(--accent-text-color);
 }
 /*# sourceMappingURL=main.css.map */
