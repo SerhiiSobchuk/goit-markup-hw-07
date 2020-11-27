@@ -1,0 +1,124 @@
+.header-all {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: var(--white);;
+    border-bottom: 1px solid #ECECEC;
+}
+
+
+
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
+.mail-svg {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+}
+
+.phone-svg {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    Fill: Solid #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-svg:hover {
+    content: "";
+    fill: var(--accent-text-color);
+}
+
+.mail-link {
+    display: flex;
+    content: "";
+    color: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mail-svg {
+    content: "";
+    Fill: Solid #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.mail-svg:hover {
+    fill: var(--accent-text-color);
+}
+
+.phone-link {
+    display: flex;
+    content: "";
+    color: #757575;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.phone-link:hover .phone-svg {
+    content: "";
+    fill: var(--accent-text-color);
+}
+
+.mail-link:hover .mail-svg {
+    content: "";
+    fill: var(--accent-text-color);
+}
+
+.active-line::after {
+    position: absolute;
+    bottom: -8px;
+    border-bottom: 4px var(--accent-text-color) solid;
+    content: "";
+    left: 0;
+    right: 0;
+    border-radius: 2px;
+}
+
+/* Web + Studio */
+.header-logo {
+    display: inline-block;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #2196F3;
+    text-decoration: none;
+    padding-top: 24px;
+    padding-bottom: 25px;
+    padding-right: 93px;
+    transform: rotateY(0) scale(1);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover {
+    color: black;
+    transform: rotateY(45deg) scale(1.25);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header-logo:hover .logo-studio-header {
+    color: var(--accent-text-color);
+    transition: all 950ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.logo-studio-header {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.contacts-header {
+    padding-left: 286px;
+}
