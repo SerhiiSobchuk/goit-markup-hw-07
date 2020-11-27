@@ -48,12 +48,7 @@
          url('../fonts/roboto-v20-latin_cyrillic-900.svg#Roboto') format('svg'); /* Legacy iOS */
     }
 
-:root {
-    --main-text-color: #757575;
-    --accent-text-color: #2196f3;
-    --white: #ffffff;
-    --black: #212121; 
-}
+@import "./utils/variables";
 
 html {
     box-sizing: border-box;
