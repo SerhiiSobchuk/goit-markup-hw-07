@@ -1,0 +1,45 @@
+.address-footer-main {
+    display: flex;
+    flex-direction: column;    
+    color: var(--white);;    
+    font-weight: 400;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.address-footer-main:hover,
+.address-footer-main:focus {
+    color: var(--accent-text-color);
+}
+
+.footer-ul {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-li:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.address-footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--white);
+}
+
+.contacts-footer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
