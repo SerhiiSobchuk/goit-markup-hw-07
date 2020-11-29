@@ -1,18 +1,18 @@
 .address-footer-main {
     display: flex;
     flex-direction: column;    
-    color: var(--white);;    
+    color: $white;;    
     font-weight: 400;
     font-size: 14px;
     font-style: normal;
     line-height: 1.71;
     letter-spacing: 0.03em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.address-footer-main:hover,
-.address-footer-main:focus {
-    color: var(--accent-text-color);
+&:hover,
+&:focus {
+    color: $accent-text-color;
+}
 }
 
 .footer-ul {
@@ -31,7 +31,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(--white);
+    color: $white;
 }
 
 .contacts-footer {

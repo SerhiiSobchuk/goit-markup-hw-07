@@ -23,25 +23,25 @@
     align-items: center;
     width: 44px;
     height: 44px;
-    background-color: var(--white);;
+    background-color: $white;;
     border-radius: 50%;
-    transition: var(--white) 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: $white 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icons-link:hover {
-    background-color: var(--accent-text-color);
+    background-color: $accent-text-color;
 }
 
 .social-icons-link:hover .social-icons-svg {
-    fill: var(--white);
+    fill: $white;
 }
 
 .instagram-bcg-blue {
-    background-color: var(--accent-text-color);
+    background-color: $accent-text-color;
 }
 
 .instagram-color-white {
-    fill: var(--white);
+    fill: $white;
 }
 
 .instagram-color-normal {
@@ -66,15 +66,15 @@
     padding: 0;
     margin-right: 10px;
     transition: rgba(255, 255, 255, 0.1) 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.social-icons-link-dark:hover {
-    background-color: var(--accent-text-color);
+&:hover {
+    background-color: $accent-text-color;
+}
 }
 
 .social-icons-svg-footer {
     width: 20px;
     height: 20px;
-    fill: var(--white);
+    fill: $white;
 
 }

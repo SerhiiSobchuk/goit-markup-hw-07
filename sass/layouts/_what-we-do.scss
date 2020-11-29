@@ -1,5 +1,5 @@
 .wwd1 {
-    background-color: var(--white);
+    background-color: $white;
     width: auto;
     margin-left: auto;
     margin-right: auto;
@@ -27,7 +27,7 @@
 }
 
 .ul-wwd {
-    background-color: var(--white);;
+    background-color: $white;;
 }
 .ul-wwd .li-wwd:not(:last-child) {
     margin-right: 30px;
@@ -53,6 +53,6 @@
     text-align: center;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    color: var(--white);
+    color: $white;
 
 }
