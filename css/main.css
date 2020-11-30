@@ -67,7 +67,6 @@ body {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .container {
@@ -918,7 +917,6 @@ img {
 
 .li-wwd {
   position: relative;
-  height: auto;
 }
 
 .wwd-plus {
