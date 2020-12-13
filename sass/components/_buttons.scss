@@ -50,7 +50,10 @@
     cursor: pointer;
 }
 
-&:hover,
+&:hover .subs-icon {    
+    fill: $accent-text-color;
+}
+
 &:focus-within .subs-icon {
     fill: $accent-text-color;
 }

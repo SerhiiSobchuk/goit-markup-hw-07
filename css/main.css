@@ -209,7 +209,10 @@ img {
   cursor: pointer;
 }
 
-.subs-btn:hover,
+.subs-btn:hover .subs-icon {
+  fill: #2196f3;
+}
+
 .subs-btn:focus-within .subs-icon {
   fill: #2196f3;
 }
